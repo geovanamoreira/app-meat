@@ -1,3 +1,4 @@
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -7,7 +8,8 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'about', component: AboutComponent},
-  {path:'restaurants', component: RestaurantsComponent}
+  {path:'restaurants', component: RestaurantsComponent},
+  {path:'restaurants/:id', component: RestaurantDetailComponent}
 ];
 
 @NgModule({
